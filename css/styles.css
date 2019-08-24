@@ -1,6 +1,3 @@
-
-
-
 /* Estilos menu de navegacion */
 .menu_navegacion {
     display: flex;
@@ -18,6 +15,10 @@
 
 #imagen_logo {
     width: 100%;
+}
+
+#imagen_menu {
+    display: none;
 }
 
 .items_navegacion {
@@ -194,8 +195,8 @@ h2 {
     background-color: black;
     background-image: url("../images/make.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: center;
+    background-size: 90%;
+    background-position: center;
 }
 
 .formacion_item > p {
@@ -321,4 +322,9 @@ h5 {
     color: white;
     margin: 0 auto;
     text-align: center;
+}
+
+/* se retira el hr para resoluciones grandes */
+hr {
+    display: none;
 }

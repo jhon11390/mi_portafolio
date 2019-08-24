@@ -1,0 +1,310 @@
+*{
+    box-sizing: content-box;
+}
+
+/* Estilos menu de navegacion para tamaños menores de 480px */
+nav {
+    flex-direction: column;
+    z-index: 10;
+
+}
+
+.imagen_navegacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+#imagen_logo {
+    display: block;
+    width: 150px;
+    margin-left: 15px;
+}
+
+#imagen_menu {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+
+.items_navegacion {
+    display: none;
+    flex-direction: column;
+    align-items: right;
+    padding-left: 0;
+    
+}
+
+.item_navegacion {
+    border: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 200px;
+}
+
+
+/* Estilos header */
+header {
+    height: 400px;
+    background-position: center center;
+}
+
+header > h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+header > p {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 30px;
+}
+
+
+.redes_sociales {
+    display: none;
+ }
+
+
+/*Estilos acerca de mi */
+.acerca_de_mi {
+    height: 1000px;
+    position: relative;
+}
+
+.acerca_de_mi::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 120px;
+    border: 5px solid wheat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/jhon.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: -80px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.parrafo_acerca {
+    width: 100%;
+    display: block;
+    padding: 60px 20px 10px;
+}
+
+.parrafo_acerca > h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.parrafo_acerca > p {
+    font-size: 15px;
+}
+
+.imagen_jhon {
+    display: none;
+}
+
+
+/* Seccion Formacion */
+.formacion {
+    height: 1000px;
+}
+
+.formacion > h1 {
+    font-size: 30px;
+    padding-left: 0;
+    text-align: center;
+}
+
+.conjunto_formacion {
+    flex-direction: column;
+}
+
+.formacion_item {
+    width: 100%;
+    height: 250px;
+    margin-top: 0;
+}
+
+.formacion_item > h2 {
+    font-size: 20px;
+    height: 30px;
+}
+
+.imagenes_formacion_uno {
+    width: 80px;
+    height: 80px;
+    background-image: url("../images/sesquile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagenes_formacion_dos {
+    width: 80px;
+    height: 90px;
+    background-image: url("../images/popayan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagenes_formacion_tres {
+    width: 80px;
+    height: 90px;
+    background-color: black;
+    background-image: url("../images/make.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+}
+
+.formacion_item > p {
+    font-size: 15px;
+    width: 100%;
+
+}
+
+hr {
+    display: block;
+    width: 80%;
+}
+
+
+/* Estilos proyectos */
+.proyectos {
+    height: 1000px;
+    flex-direction: column;
+}
+
+.cabezales_proyecto {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.cabezales_proyecto > h1 {
+    font-size: 30px;
+}
+
+.cabezales_proyecto > p {
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.conjunto_proyectos {
+    padding-top: 0;
+    height: 650px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: 90%;
+    justify-content: space-around;
+
+}
+
+.proyecto_item {
+    width: 90%;
+    display: flex;
+}
+
+.proyecto_item > h2 {
+    width: 60%
+}
+
+.proyecto_imagen_uno,
+.proyecto_imagen_dos,
+.proyecto_imagen_tres,
+.proyecto_imagen_cuatro {
+    width: 40%;
+}
+.proyecto_imagen_uno {
+    background-size: cover;
+}
+
+/* Estilos frase */
+aside {
+    height: 1000px;
+    background-position: center center;
+    
+}
+
+q {
+    height: 600px;
+    padding-left: 30px;
+}
+
+/* Estilos contacto */
+.contactos {
+    height: 1000px;
+}
+
+
+.contactos > h1 {
+    font-size: 30px;
+    padding-left: 0;
+    text-align: center;
+}
+
+.informacion_contacto {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 740px;
+}
+
+.imagen_footer {
+    width: 90%;
+    height: 13%;
+}
+
+.imagen_footer > img {
+    display: block;
+    width: 100%;
+}
+
+.redes_footer > h3 {
+    text-align: center;
+}
+
+.redes_footer h4 {
+    text-align: center;
+}
+
+.redes_footer > .redes_sociales {
+    display: block;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.redes_sociales > li {
+    width: 50px;
+    height: 50px;
+    margin: 40px;
+    border: 1px solid yellow; 
+}
+
+.item_red_social img {
+    width: 35px;
+    height: 35px;
+}
+

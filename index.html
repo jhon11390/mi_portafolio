@@ -10,19 +10,30 @@
     <link href="https://fonts.googleapis.com/css?family=Londrina+Solid&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Calligraffitti&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylesphone.css" media="screen and (max-device-width:480px)">
+    <script>
+        function mostrar(){
+            if(document.querySelector(".items_navegacion").style.display == "block"){
+                document.querySelector(".items_navegacion").style.display="none";
+            }else{
+                document.querySelector(".items_navegacion").style.display="block";
+            }
+        }
+    </script>
 </head>
 <body>
     <!-- Panel de navegacion -->
     <nav class="menu_navegacion">
         <div class="imagen_navegacion">
             <img src="images/image.png" alt="logo de la pagina" id="imagen_logo">
+            <a href="#" id="menu_icon" onclick="mostrar();"><img src="images/menu.jpg" alt="logo de la pagina" id="imagen_menu" style="background: white;"></a>
         </div>
         <ul class="items_navegacion">
-            <li class="item_navegacion"><a href="#seccion_inicio" class="links_navegacion">Inicio</a></li>
-            <li class="item_navegacion"><a href="#seccion_acerca_de_mi" class="links_navegacion">Acerca de mi</a></li>
-            <li class="item_navegacion"><a href="#seccion_formacion" class="links_navegacion">Formacion</a></li>
-            <li class="item_navegacion"><a href="#seccion_proyectos" class="links_navegacion">Algunos trabajos</a></li>
-            <li class="item_navegacion"><a href="#seccion_contactos" class="links_navegacion">Contactos</a></li>
+            <li class="item_navegacion"><a href="#seccion_inicio" class="links_navegacion" onclick="mostrar();">Inicio</a></li>
+            <li class="item_navegacion"><a href="#seccion_acerca_de_mi" class="links_navegacion" onclick="mostrar();">Acerca de mi</a></li>
+            <li class="item_navegacion"><a href="#seccion_formacion" class="links_navegacion" onclick="mostrar();">Formacion</a></li>
+            <li class="item_navegacion"><a href="#seccion_proyectos" class="links_navegacion" onclick="mostrar();">Algunos trabajos</a></li>
+            <li class="item_navegacion"><a href="#seccion_contactos" class="links_navegacion" onclick="mostrar();">Contactos</a></li>
         </ul>
     </nav>
 
@@ -58,16 +69,19 @@
                 <h2>Colegio Cooperativo de Sesquile</h2>
                 <div class="imagenes_formacion_uno"></div>
                 <p>Egresado como bachiler tecnico en secretariado en el año 2003</p>
+                <hr>
             </div>
             <div class="formacion_item">
                 <h2>Fundacion Universitaria de Popayan</h2>
                 <div class="imagenes_formacion_dos"></div>
                 <p>Egresado como ingeniero industrial en el año 2013</p>
+                <hr>
             </div>
             <div class="formacion_item">
                 <h2>Make it Real</h2>
                 <div class="imagenes_formacion_tres"></div>
                 <p>En formacion Actual con el curso Ruby on Rails Full-StackDeveloper </p>
+                <hr>
             </div>
         </div>
     </article>
@@ -107,10 +121,10 @@
     <footer class="contactos" id="seccion_contactos">
         <h1>Contactos</h1>
         <div class="informacion_contacto">
-            <div>
+            <div class="imagen_footer">
                 <img src="images/image.png" alt="imagen_logo">
             </div>
-            <div>
+            <div class="redes_footer">
                 <h3>Ingeniero Industrial y desarrollador aprendiz</h3>
                 <ul class="redes_sociales">
                     <li class="item_red_social"><a href="#"><img src="images/icons8-facebook-50.png" alt=""></a></li>
