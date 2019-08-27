@@ -1,3 +1,4 @@
+
 *{
     box-sizing: content-box;
 }
@@ -32,6 +33,9 @@ nav {
     margin-right: 15px;
 }
 
+.items_navegacion2 {
+    display: none;
+}
 
 .items_navegacion {
     display: none;
@@ -74,7 +78,7 @@ header > p {
 
 /*Estilos acerca de mi */
 .acerca_de_mi {
-    height: 1000px;
+    height: 1100px;
     position: relative;
 }
 

@@ -1,3 +1,8 @@
+:root {
+    --menu: 0;
+}
+
+
 /* Estilos menu de navegacion */
 .menu_navegacion {
     display: flex;
@@ -22,6 +27,10 @@
 }
 
 .items_navegacion {
+    display: none;
+}
+
+.items_navegacion2 {
     display: flex;
 }
 
@@ -328,3 +337,7 @@ h5 {
 hr {
     display: none;
 }
+
+/* Estilos para resolicones menores de 360 */
+
+

@@ -10,16 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Londrina+Solid&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Calligraffitti&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/stylesphone.css" media="screen and (max-device-width:480px)">
-    <script>
-        function mostrar(){
-            if(document.querySelector(".items_navegacion").style.display == "block"){
-                document.querySelector(".items_navegacion").style.display="none";
-            }else{
-                document.querySelector(".items_navegacion").style.display="block";
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="css/stylesphone.css" media="screen and (max-width:480px)">
+    
 </head>
 <body>
     <!-- Panel de navegacion -->
@@ -35,6 +27,13 @@
             <li class="item_navegacion"><a href="#seccion_proyectos" class="links_navegacion" onclick="mostrar();">Algunos trabajos</a></li>
             <li class="item_navegacion"><a href="#seccion_contactos" class="links_navegacion" onclick="mostrar();">Contactos</a></li>
         </ul>
+        <ul class="items_navegacion2">
+                <li class="item_navegacion"><a href="#seccion_inicio" class="links_navegacion">Inicio</a></li>
+                <li class="item_navegacion"><a href="#seccion_acerca_de_mi" class="links_navegacion">Acerca de mi</a></li>
+                <li class="item_navegacion"><a href="#seccion_formacion" class="links_navegacion">Formacion</a></li>
+                <li class="item_navegacion"><a href="#seccion_proyectos" class="links_navegacion">Algunos trabajos</a></li>
+                <li class="item_navegacion"><a href="#seccion_contactos" class="links_navegacion">Contactos</a></li>
+            </ul>
     </nav>
 
     <!-- Panel de cabecera-->
@@ -141,5 +140,14 @@
         <hr>
         <h5>Jhon Ortega 2019</h5>
     </footer>
+    <script>
+        function mostrar(){
+            if(document.querySelector(".items_navegacion").style.display == "block"){
+                document.querySelector(".items_navegacion").style.display="none";
+            }else{
+                document.querySelector(".items_navegacion").style.display="block";
+            }
+        }
+    </script>
 </body>
 </html>
