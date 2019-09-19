@@ -7,6 +7,7 @@
 .menu_navegacion {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: black;
     width: 100%;
     position: fixed;
@@ -125,6 +126,10 @@ p {
     padding: 60px 80px 10px;
 }
 
+.imagen_jhon_2 {
+    display: none;
+}
+
 .parrafo_acerca > p {
     font-size: 16px;
     line-height: 40px;
@@ -190,6 +195,7 @@ h2 {
     background-size: 70%;
     background-position: center center;
     background-color: black;
+    border-radius: 10px;
 }
 
 .imagenes_formacion_dos {
@@ -200,6 +206,7 @@ h2 {
     background-size: 70%;
     background-position: center center;
     background-color: white;
+    border-radius: 10px;
 }
 
 .imagenes_formacion_tres {
@@ -210,6 +217,7 @@ h2 {
     background-repeat: no-repeat;
     background-size: 90%;
     background-position: center;
+    border-radius: 10px;
 }
 
 .formacion_item > p {

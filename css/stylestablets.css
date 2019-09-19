@@ -1,3 +1,174 @@
+
+/* Estilos de navegacion */
+
 .menu_navegacion {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagen_navegacion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#imagen_logo {
+    width: 160px;
+    padding-top: 20px;
+}
+
+.item_navegacion {
+    width: 70px;
+}
+
+.links_navegacion {
+    font-size: 10px;
+}
+
+
+/* Estilos cabecera */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/Bosque.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+header > h1 {
+    font-size: 38px;
+}
+
+header > p {
+    font-size: 16px;
+}
+
+.item_red_social {
+    margin: 9px;
+}
+
+
+/* estilos acerca de mi */
+
+.acerca_de_mi {
+    height: 900px;
+}
+
+.imagen_jhon {
     display: none;
+}
+
+.imagen_jhon_2{
+    display: block;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/jhon.jpeg");;;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    float: left;
+    shape-outside: circle();
+    margin: 10px;
+}
+
+.parrafo_acerca {
+    width: 100%;
+    padding: 110px 30px 10px;
+}
+
+.parrafo_acerca > p {
+    font-size: 14px;
+}
+/* estilos formacion */
+
+.formacion {
+    width: 100%;
+}
+
+.formacion > h1 {
+    padding-top: 112px;
+    padding-left: 30px;
+    padding-bottom: 10px; 
+}
+
+.formacion_item > h2 {
+    font-size: 18px;
+    width: 150px;
+}
+
+.formacion_item > p {
+    font-size: 20px;
+}
+
+.imagenes_formacion_uno {
+    width: 160px;
+}
+
+.imagenes_formacion_uno {
+    width: 160px;
+}
+
+.imagenes_formacion_tres {
+    width: 160px;
+}
+
+/* estilos proyectos */
+
+.proyectos {
+    flex-direction: column;
+    width: 100%;
+}
+
+.cabezales_proyecto {
+    width: 90%;
+    padding: 110px 30px 10px;
+}
+
+.cabezales_proyecto > p {
+    font-size: 20px;
+}
+
+.conjunto_proyectos {
+    flex-wrap: nowrap;
+    padding-top: 0;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Estilos frases */
+
+q {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Estilos contactos */
+
+.contactos {
+    height: 750px;
+}
+
+
+.contactos > h1 {
+    padding-top: 110px;
+    padding-left: 30px; 
+}
+
+.informacion_contacto {
+    flex-direction: column;
+}
+
+.redes_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+hr {
+    display: block;
 }
